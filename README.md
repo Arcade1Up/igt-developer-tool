@@ -44,8 +44,24 @@ getActivity().finish();
 System.exit(0);
 ```
 
-## <a name="ingamemenu"></a>In-Game Menu
-Coming soon.
+## <a name="ingamemenu"></a>In-Game Menu  
+Most of Arcade1Up-published games share the same in-game menu which provides these basic settings:
+- How to play information
+- Return to Dashboard
+- SFX ON/OFF
+- Music ON/OFF
+
+Main Menu Settings:  
+<img src="./assets/main_menu.png" alt="alt text" width="800">
+
+In-Game Menu Settings:  
+<img src="./assets/ingame_menu.png" alt="alt text" width="800">
+
+Here is sample project with the in-game menus, developers can feel free to integrate this menu directly to their games, or build their own game menu. The only must-have item is a software button to return to the IGT Dashboard.  
+
+**TODO: Sample project link here**
+
+
 
 ## <a name="controlmotor"></a>Control the Rumble Motor
 Coming soon.
