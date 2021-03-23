@@ -6,8 +6,6 @@
 
 The page is intended to help developers to get started on games development on The Infinity Game Table. 
 
-<br>
-
 ## Quick Links
 
 [Technical Specification](#technicalspec)  
@@ -18,12 +16,10 @@ The page is intended to help developers to get started on games development on T
 [Sample Game](#samplegame)  
 [Multiplayer SDK](#multiplayer)
 
-<br>
-
 ## <a name="technicalspec"></a>Technical Specification
 | Item        | Spec           |
 | :------------- |:------------- |
-| **CPU** | RockChip RK3368 Octa-core Cortex-A53 up to 1.5GHz |
+| **CPU** | RockChip RK3368 Octa-core Cortex-A53 1.5GHz |
 | **GPU** | PowerVR G6110 |
 | **Memory** | 16GB + TF Card Slot |
 | **RAM** | DDR3 2GB |
@@ -35,32 +31,20 @@ The page is intended to help developers to get started on games development on T
 | **Touch Support** | G+G capacitive Touch-10 Points |
 | **Google Play Service** | Not available |
 
-<br>
-
 ## <a name="overview"></a>Overview
 IGT automatically boots into our Dashboard application which user will use it to browse our games store, download games and manage their downloaded games. Developing games on IGT is no difference than typical Android games development except Google Play Service is not supported on IGT.
-
-<br>
 
 ## <a name="gamelifecycle"></a>Game Life Cycle
 Coming soon.
 
-<br>
-
 ## <a name="controlmotor"></a>Control the Rumble Motor
 Coming soon.
-
-<br>
 
 ## <a name="ingamemenu"></a>In-Game Menu
 Coming soon.
 
-<br>
-
 ## <a name="samplegame"></a>Sample Game
 Coming soon.
-
-<br>
 
 ## <a name="multiplayer"></a>Multiplayer SDK
 Coming soon.
