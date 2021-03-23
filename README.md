@@ -11,10 +11,11 @@ The page is intended to help developers to get started on games development on T
 [Technical Specification](#technicalspec)  
 [Overview](#overview)  
 [Game Life Cycle](#gamelifecycle)  
-[Control the Rumble Motor](#controlmotor)  
 [In-Game Menu](#ingamemenu)  
+[Control the Rumble Motor](#controlmotor)  
 [Sample Game](#samplegame)  
-[Multiplayer SDK](#multiplayer)
+[Multiplayer SDK](#multiplayer)  
+[In-App Purchase](#iap)
 
 ## <a name="technicalspec"></a>Technical Specification
 | Item        | Spec           |
@@ -32,19 +33,28 @@ The page is intended to help developers to get started on games development on T
 | **Google Play Service** | Not available |
 
 ## <a name="overview"></a>Overview
-IGT automatically boots into our Dashboard application which user will use it to browse our games store, download games and manage their downloaded games. Developing games on IGT is no difference than typical Android games development except Google Play Service is not supported on IGT.
+IGT automatically boots into our Dashboard application which user will use it to browse our games store, download games and manage their downloaded games. Developing games on IGT is no difference than typical Android games development except Google Play Service is not supported on IGT.  
+  
+Refer to the below sections for more information.
 
 ## <a name="gamelifecycle"></a>Game Life Cycle
+User can launch any downloaded games from their Dashboard. Games life cycle management is exactly the same as typical Android application except **there is no hardware or software back button on IGT**. Developers will have to provide a software button for users to quit the game and head back to the IGT Dashboard simply by calling
+```
+getActivity().finish();
+System.exit(0);
+```
+
+## <a name="ingamemenu"></a>In-Game Menu
 Coming soon.
 
 ## <a name="controlmotor"></a>Control the Rumble Motor
-Coming soon.
-
-## <a name="ingamemenu"></a>In-Game Menu
 Coming soon.
 
 ## <a name="samplegame"></a>Sample Game
 Coming soon.
 
 ## <a name="multiplayer"></a>Multiplayer SDK
+Coming soon.
+
+## <a name="iap"></a>In-App Purchase
 Coming soon.
