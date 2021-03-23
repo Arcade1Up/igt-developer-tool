@@ -52,10 +52,10 @@ Most of Arcade1Up-published games share the same in-game menu which provides the
 - Music ON/OFF
 
 Main Menu Settings:  
-<img src="./assets/main_menu.png" alt="alt text" width="800">
+![Alt text](/assets/main_menu.png?raw=true "Main Menu Settings")
 
 In-Game Menu Settings:  
-<img src="./assets/ingame_menu.png" alt="alt text" width="800">
+![Alt text](/assets/ingame_menu.png?raw=true "In-Game Menu Settings")
 
 Here is sample project with the in-game menus, developers can feel free to integrate this menu directly to their games, or build their own game menu. The only must-have item is a software button to return to the IGT Dashboard.  
 
