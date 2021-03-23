@@ -8,9 +8,9 @@ The page is intended to help developers to get started on games development on T
 
 <br>
 
-<h2>Quick Links</h2>
+## Quick Links
 
-[Technical Specification](##technical-specification)  
+[Technical Specification](#technicalspec)  
 [Overview](##overview)  
 [Game Life Cycle](##game-life-cycle)  
 [Control the Rumble Motor](##control-the-rumble-motor)  
@@ -20,8 +20,8 @@ The page is intended to help developers to get started on games development on T
 
 <br>
 
-## Technical Specification
-|         |            |
+## <a name="technicalspec"></a>Technical Specification
+| Item        | Spec           |
 | ------------- |:------------- |
 | **CPU** | RockChip RK3368 Octa-core Cortex-A53 up to 1.5GHz |
 | **GPU** | PowerVR G6110 |
