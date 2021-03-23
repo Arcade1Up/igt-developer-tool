@@ -16,6 +16,7 @@ The page is intended to help developers to get started on games development on T
 [Sample Game](#samplegame)  
 [Multiplayer SDK](#multiplayer)  
 [In-App Purchase](#iap)
+[Publish your Game](#publish)
 
 ## <a name="technicalspec"></a>Technical Specification
 | Item        | Spec           |
@@ -61,8 +62,6 @@ Here is sample project with the in-game menus, developers can feel free to integ
 
 **TODO: Sample project link here**
 
-
-
 ## <a name="controlmotor"></a>Control the Rumble Motor
 Coming soon.
 
@@ -74,3 +73,6 @@ Coming soon.
 
 ## <a name="iap"></a>In-App Purchase
 Coming soon.
+
+## <a name="publish"></a>Publish your Game
+Want to publish your game on IGT? Please contact **<TODO: Contact info>**
