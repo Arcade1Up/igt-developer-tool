@@ -2,7 +2,7 @@
 
 ## Welcome
 
-[The Infinity Game Table](https://infinitygametable.com) ("IGT" for short) was designed and created by the gamers at [Arcade1Up™](https://arcade1up.com/)—the #1 at-home arcade company, who partnered with Hasbro™ the — the #1 name in board games, to take board game entertainment to the next level.  
+<a href="https://infinitygametable.com" target="_blank">The Infinity Game Table</a> ("IGT" for short) was designed and created by the gamers at <a href="https://arcade1up.com/" target="_blank">Arcade1Up™</a> — the #1 at-home arcade company, who partnered with Hasbro™ the — the #1 name in board games, to take board game entertainment to the next level.  
 
 The page is intended to help developers to get started on games development on The Infinity Game Table. 
 
