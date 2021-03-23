@@ -11,18 +11,18 @@ The page is intended to help developers to get started on games development on T
 ## Quick Links
 
 [Technical Specification](#technicalspec)  
-[Overview](##overview)  
-[Game Life Cycle](##game-life-cycle)  
-[Control the Rumble Motor](##control-the-rumble-motor)  
-[In-Game Menu](##in-game-menu)  
-[Sample Game](##sample-game)  
-[Multiplayer SDK](##multiplayer-sdk)
+[Overview](#overview)  
+[Game Life Cycle](#gamelifecycle)  
+[Control the Rumble Motor](#controlmotor)  
+[In-Game Menu](#ingamemenu)  
+[Sample Game](#samplegame)  
+[Multiplayer SDK](#multiplayer)
 
 <br>
 
 ## <a name="technicalspec"></a>Technical Specification
 | Item        | Spec           |
-| ------------- |:------------- |
+| :------------- |:------------- |
 | **CPU** | RockChip RK3368 Octa-core Cortex-A53 up to 1.5GHz |
 | **GPU** | PowerVR G6110 |
 | **Memory** | 16GB + TF Card Slot |
@@ -37,30 +37,30 @@ The page is intended to help developers to get started on games development on T
 
 <br>
 
-## Overview
+## <a name="overview"></a>Overview
 IGT automatically boots into our Dashboard application which user will use it to browse our games store, download games and manage their downloaded games. Developing games on IGT is no difference than typical Android games development except Google Play Service is not supported on IGT.
 
 <br>
 
-## Game Life Cycle
+## <a name="gamelifecycle"></a>Game Life Cycle
 Coming soon.
 
 <br>
 
-## Control the Rumble Motor
+## <a name="controlmotor"></a>Control the Rumble Motor
 Coming soon.
 
 <br>
 
-## In-Game Menu
+## <a name="ingamemenu"></a>In-Game Menu
 Coming soon.
 
 <br>
 
-## Sample Game
+## <a name="samplegame"></a>Sample Game
 Coming soon.
 
 <br>
 
-## Multiplayer SDK
+## <a name="multiplayer"></a>Multiplayer SDK
 Coming soon.
