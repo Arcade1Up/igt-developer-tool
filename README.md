@@ -15,7 +15,7 @@ The page is intended to help developers to get started on games development on T
 [Control the Rumble Motor](#controlmotor)  
 [Sample Game](#samplegame)  
 [Multiplayer SDK](#multiplayer)  
-[In-App Purchase](#iap)
+[In-App Purchase](#iap)  
 [Publish your Game](#publish)
 
 ## <a name="technicalspec"></a>Technical Specification
