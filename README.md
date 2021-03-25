@@ -63,7 +63,8 @@ Here is sample project with the in-game menus, developers can feel free to integ
 **TODO: Sample project link here**
 
 ## <a name="controlmotor"></a>Control the Rumble Motor
-Coming soon.
+Please refer to this project on how to control the rumble motor on IGT:  
+https://github.com/Arcade1Up/igt-rumble-motor
 
 ## <a name="samplegame"></a>Sample Game
 Coming soon.
