@@ -66,14 +66,8 @@ Here is sample project with the in-game menus, developers can feel free to integ
 Please refer to this project on how to control the rumble motor on IGT:  
 https://github.com/Arcade1Up/igt-rumble-motor
 
-## <a name="samplegame"></a>Sample Game
-Coming soon.
-
-## <a name="multiplayer"></a>Multiplayer SDK
-Coming soon.
-
-## <a name="iap"></a>In-App Purchase
-Coming soon.
+## <a name="multiplayer"></a>Multiplayer Connected Play
+Please contact us if you wish to implement multiplayer connected play to your game. **<TODO: Contact info>**
 
 ## <a name="publish"></a>Publish your Game
 Want to publish your game on IGT? Please contact **<TODO: Contact info>**
