@@ -70,4 +70,4 @@ https://github.com/Arcade1Up/igt-rumble-motor
 Please contact us if you wish to implement multiplayer connected play to your game.
 
 ## <a name="publish"></a>Publish your Game
-Want to publish your game on IGT? Please contact 
+Want to publish your game on IGT? Please contact us.
