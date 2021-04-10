@@ -13,9 +13,7 @@ The page is intended to help developers to get started on games development on T
 [Game Life Cycle](#gamelifecycle)  
 [In-Game Menu](#ingamemenu)  
 [Control the Rumble Motor](#controlmotor)  
-[Sample Game](#samplegame)  
 [Multiplayer SDK](#multiplayer)  
-[In-App Purchase](#iap)  
 [Publish your Game](#publish)
 
 ## <a name="technicalspec"></a>Technical Specification
