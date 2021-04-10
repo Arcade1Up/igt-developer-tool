@@ -60,14 +60,14 @@ In-Game Menu Settings:
 
 Here is sample project with the in-game menus, developers can feel free to integrate this menu directly to their games, or build their own game menu. The only must-have item is a software button to return to the IGT Dashboard.  
 
-**TODO: Sample project link here**
+*Sample project coming soon*
 
 ## <a name="controlmotor"></a>Control the Rumble Motor
 Please refer to this project on how to control the rumble motor on IGT:  
 https://github.com/Arcade1Up/igt-rumble-motor
 
 ## <a name="multiplayer"></a>Multiplayer Connected Play
-Please contact us if you wish to implement multiplayer connected play to your game. **<TODO: Contact info>**
+Please contact us if you wish to implement multiplayer connected play to your game.
 
 ## <a name="publish"></a>Publish your Game
-Want to publish your game on IGT? Please contact **<TODO: Contact info>**
+Want to publish your game on IGT? Please contact 
