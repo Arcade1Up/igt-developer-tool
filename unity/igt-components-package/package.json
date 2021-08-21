@@ -1,0 +1,16 @@
+{
+    "name": "com.arcade1up.igt-components",
+    "version": "1.0.0",
+    "description": "Components for use in building games for the Infinity Game Table.  Install the sample scene for a demo on how to wire up the events.",
+    "displayName": "Infinity Game Table Components",
+    "documentationUrl": "https://github.com/Arcade1Up/igt-developer-tool/tree/main/unity/igt-components-package",
+    "unity": "2020.3",
+    "license": "Unlicense",
+    "samples": [
+        {
+            "displayName": "Sample Scene",
+            "description": "Sample scene to demonstrate usage of components",
+            "path": "Samples~/SampleScene"
+        }
+    ]
+}
