@@ -37,6 +37,9 @@ namespace IGT.Settings
             if (!howToPlayPanel) throw new System.Exception($"Missing How To Play Panel game object for {gameObject.name}");
             if (!sfxButton) throw new System.Exception($"Missing SFX Button for {gameObject.name}");
             if (!musicButton) throw new System.Exception($"Missing Music Button for {gameObject.name}");
+
+            settingsPanel.SetActive(false);
+            howToPlayPanel.SetActive(false);
         }
 
         public void ToggleSettingsPanelActive()
