@@ -3,6 +3,7 @@
 ## Unity Tips & Tricks
 
 This page is intended to help developers to get started on games development on The Infinity Game Table using Unity.
+To help with common development needs, there is a community built [igt-components package](./igt-components-package) for Unity in this repository.
 
 ## Debugging From Unity / Visual Studio
 
