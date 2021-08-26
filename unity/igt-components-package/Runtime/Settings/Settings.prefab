@@ -66,6 +66,85 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+--- !u!1 &2908451677467402250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4394818255026881618}
+  - component: {fileID: 4683522728514865726}
+  - component: {fileID: 2453011923623259230}
+  m_Layer: 5
+  m_Name: Version
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4394818255026881618
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2908451677467402250}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6035674465116072163}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -20, y: 20}
+  m_SizeDelta: {x: 240, y: 36}
+  m_Pivot: {x: 1, y: 0}
+--- !u!222 &4683522728514865726
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2908451677467402250}
+  m_CullTransparentMesh: 1
+--- !u!114 &2453011923623259230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2908451677467402250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 8
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: V0.0.0
 --- !u!1 &6035674464780564821
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,6 +359,7 @@ RectTransform:
   m_Children:
   - {fileID: 401360081417592530}
   - {fileID: 6035674465385518697}
+  - {fileID: 4394818255026881618}
   m_Father: {fileID: 6035674466329656450}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -783,6 +863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settingsButton: {fileID: 2123170329773600145}
   settingsPanel: {fileID: 6035674465116072160}
+  versionLabel: {fileID: 2453011923623259230}
   howToPlayPanel: {fileID: 6035674466257662758}
   sfxButton: {fileID: 4398729202276740813}
   musicButton: {fileID: 234904013482508734}
@@ -1065,6 +1146,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1adf16baeffeb9a469f54cad10bd7472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onShowSettingsMenu:
+    m_PersistentCalls:
+      m_Calls: []
+  onHideSettingsMenu:
+    m_PersistentCalls:
+      m_Calls: []
   onGoHome:
     m_PersistentCalls:
       m_Calls: []
@@ -1483,11 +1570,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1b1658fee9a25a42842c2aebe6169be, type: 3}
---- !u!224 &8070057540947104407 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4340800855141625105, guid: a1b1658fee9a25a42842c2aebe6169be, type: 3}
-  m_PrefabInstance: {fileID: 6035674464802373510}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2123170329773600145 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5671159862046560791, guid: a1b1658fee9a25a42842c2aebe6169be, type: 3}
@@ -1499,6 +1581,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &8070057540947104407 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4340800855141625105, guid: a1b1658fee9a25a42842c2aebe6169be, type: 3}
+  m_PrefabInstance: {fileID: 6035674464802373510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6035674464824057243
 PrefabInstance:
   m_ObjectHideFlags: 0
