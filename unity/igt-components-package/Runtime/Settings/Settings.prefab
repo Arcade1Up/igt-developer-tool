@@ -863,7 +863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settingsButton: {fileID: 2123170329773600145}
   settingsPanel: {fileID: 6035674465116072160}
-  versionLabel: {fileID: 0}
+  versionLabel: {fileID: 2453011923623259230}
   howToPlayPanel: {fileID: 6035674466257662758}
   sfxButton: {fileID: 4398729202276740813}
   musicButton: {fileID: 234904013482508734}
