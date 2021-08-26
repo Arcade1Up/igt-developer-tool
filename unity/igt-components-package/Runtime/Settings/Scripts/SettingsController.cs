@@ -12,6 +12,8 @@ namespace IGT.Settings
         [Header("Settings Panels")]
         [Tooltip("The panel activated when the Settings Button is clicked")]
         public GameObject settingsPanel;
+        [Tooltip("The text component used for displaying the application version number")]
+        public Text versionLabel;
         [Tooltip("The panel activated when the How to Play button is clicked")]
         public GameObject howToPlayPanel;
 
@@ -40,6 +42,8 @@ namespace IGT.Settings
 
             settingsPanel.SetActive(false);
             howToPlayPanel.SetActive(false);
+
+            versionLabel.text = $"V{Application.version}";
         }
 
         public void ToggleSettingsPanelActive()
