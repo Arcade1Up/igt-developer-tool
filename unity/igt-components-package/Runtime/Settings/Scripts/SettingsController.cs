@@ -57,6 +57,15 @@ namespace IGT.Settings
         private void UpdateSettingsButtonActive()
         {
             settingsButton.gameObject.SetActive(!settingsPanel.activeInHierarchy);
+
+            if (settingsPanel.activeInHierarchy)
+            {
+                config.onShowSettingsMenu.Invoke();
+            }
+            else
+            {
+                config.onHideSettingsMenu.Invoke();
+            }
         }
 
         public void GoHome()

@@ -5,6 +5,12 @@ namespace IGT.Settings
 {
     public class Settings : MonoBehaviour
     {
+        [Header("Show/Hide Settings Menu Events")]
+        [Tooltip("The events(s) invoked when the settings menu is shown, consider pausing your game")]
+        public UnityEvent onShowSettingsMenu;
+        [Tooltip("The events(s) invoked when the settings menu is hidden, consider resuming your game")]
+        public UnityEvent onHideSettingsMenu;
+
         [Header("Home Button Event")]
         [Tooltip("The event(s) invoked when the Home button is clicked")]
         public UnityEvent onGoHome;
@@ -18,7 +24,7 @@ namespace IGT.Settings
         public UnityEvent onDisableSFX;
 
         [Header("Music Button Events")]
-        [Tooltip("The event invoked when the Music button is clicked (optionally, you may add listeners to the enable/disable events instead)")]
+        [Tooltip("The event(s) invoked when the Music button is clicked (optionally, you may add listeners to the enable/disable events instead)")]
         public UnityEvent onToggleMusic;
         [Tooltip("The event(s) invoked when Music becomes enabled by clicking the Music Button")]
         public UnityEvent onEnableMusic;
