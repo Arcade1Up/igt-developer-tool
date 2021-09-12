@@ -18,6 +18,52 @@ Install into Unity to quickly add Infinity Game Table components such as a Setti
 
 ## Components
 
+### InfinityGameTableHelper
+
+The `InfinityGameTableHelper` is a utility class designed to make it quick and easy to implement features
+specific to Infinity Game Table game development. It is available within the `InfinityGameTable` namespace by including it in a `using` directive within your project source code:
+
+`using InfinityGameTable;`
+
+**Rumble**
+
+Causes the rumble motor in the Infinity Game Table to rumble for a specified duration (in milliseconds). If
+running in the Unity Editor, it will instead display a `Debug.Log` message indicating that the table would
+rumble and it's duration.
+
+`InfinityGameTableHelper.Rumble(int durationInMs)`
+
+**Quit To Dashboard**
+
+Quits the game and returns the user to the Infinity Game Table dashboard. If running in the Uniy Editor, it
+will simply stop the play mode and return to normal editor operations.
+
+`InfinityGameTableHelper.QuitToDashboard()`
+
+**Example Usage:**
+
+```
+using InfinityGameTable;
+using UnityEngine;
+
+namespace ExampleGame
+{
+    public class MainMenu : Monobehavior
+    {
+        public void OnButtonClick()
+        {
+            InfinityGameTableHelper.Rumble(500);
+            // Perform action
+        }
+
+        public void OnQuit()
+        {
+            InfinityGameTableHelper.QuitToDashboard();
+        }
+    }
+}
+```
+
 ### Settings
 
 The Settings component includes a settings button, which will launch a settings menu. This menu includes options

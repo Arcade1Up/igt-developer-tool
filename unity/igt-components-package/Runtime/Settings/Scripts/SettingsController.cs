@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace IGT.Settings
+namespace InfinityGameTable.Settings
 {
     public class SettingsController : MonoBehaviour
     {
@@ -85,14 +85,7 @@ namespace IGT.Settings
 
         public void GoDashboard()
         {
-            #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-            #else
-                AndroidJavaClass activityClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-                AndroidJavaObject activity = activityClass.GetStatic<AndroidJavaObject>("currentActivity");
-                activity.Call("finish");
-                Application.Quit();
-            #endif
+            InfinityGameTableHelper.QuitToDashboard();
         }
 
         public void ToggleSFX()

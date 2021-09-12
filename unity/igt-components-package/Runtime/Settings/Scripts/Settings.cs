@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-namespace IGT.Settings
+namespace InfinityGameTable.Settings
 {
     public class Settings : MonoBehaviour
     {
