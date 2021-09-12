@@ -41,7 +41,7 @@ To help with common development needs, there is a community built [igt-component
 
 ## Sample Code Snippets
 
-These features are available via the `InfinityGameTableHelper` script within the [igt-components package](./igt-components-package), but the code is provided here for convenience if you wish to perform these actions without installing the components package.
+These features are available via the [InfinityGameTableHelper](./igt-components-package/Runtime/Utility/InfinityGameTableHelper.cs) script within the [igt-components package](./igt-components-package), but the code is provided here for convenience if you wish to perform these actions without installing the components package.
 
 ### Exit Game
 
