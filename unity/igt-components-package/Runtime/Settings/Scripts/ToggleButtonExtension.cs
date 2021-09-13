@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace IGT.Settings
+namespace InfinityGameTable.Settings
 {
     public class ToggleButtonExtension : MonoBehaviour
     {

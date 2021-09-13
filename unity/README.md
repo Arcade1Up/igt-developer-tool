@@ -41,20 +41,44 @@ To help with common development needs, there is a community built [igt-component
 
 ## Sample Code Snippets
 
+These features are available via the [InfinityGameTableHelper](./igt-components-package/Runtime/Utility/InfinityGameTableHelper.cs) script within the [igt-components package](./igt-components-package), but the code is provided here for convenience if you wish to perform these actions without installing the components package.
+
 ### Exit Game
 
 The following code snippet may be used to cause Unity to exit play mode while in the Unity editor, but to also quit a game and return to the dashboard when running on the IGT:
 
 ```
-public void ExitGame()
+public static void QuitToDashboard()
 {
     #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-    #else
-        AndroidJavaClass activityClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-        AndroidJavaObject activity = activityClass.GetStatic<AndroidJavaObject>("currentActivity");
-        activity.Call("finish");
-        Application.Quit();
+    #elif UNITY_ANDROID
+        using (var activityClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
+        {
+            var activity = activityClass.GetStatic<AndroidJavaObject>("currentActivity");
+            activity.Call("finish");
+        }
     #endif
+    Application.Quit();
 }
+```
+
+### Rumble Motor
+
+The following code snippet may be used to cause the IGT Rumble Motor to trigger for a specified duration (in milliseconds):
+
+NOTE: You must first copy the file [igtsdk.aar](./igt-components-package/Runtime/lib/igtsdk.aar) to your Unity project's `Assets` folder.
+
+```
+    public static void Rumble(int durationInMs)
+    {
+        #if UNITY_EDITOR
+            Debug.Log($"Infinity Game Table: Rumble ({durationInMs}ms)");
+        #elif UNITY_ANDROID
+            using (var igtMotor = new AndroidJavaClass("com.arcade1up.igtsdk.IGTMotor"))
+            {
+                igtMotor.CallStatic("rumble", durationInMs);
+            }
+        #endif
+    }
 ```

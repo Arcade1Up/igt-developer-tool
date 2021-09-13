@@ -1,6 +1,6 @@
 {
   "name": "com.arcade1up.igt-components",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Components for use in building games for the Infinity Game Table.  Install the sample scene for a demo on how to wire up the events.",
   "displayName": "Infinity Game Table",
   "documentationUrl": "https://github.com/Arcade1Up/igt-developer-tool/tree/main/unity/igt-components-package",
