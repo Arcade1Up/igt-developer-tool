@@ -15,6 +15,14 @@ namespace InfinityGameTable.Settings
         [Tooltip("The event(s) invoked when the Home button is clicked")]
         public UnityEvent onGoHome;
 
+        [Header("Vibration Button Events")]
+        [Tooltip("The event(s) invoked when the Vibration Button is clicked (optionally, you may add listeners to the enable/disable events instead)")]
+        public UnityEvent onToggleVibration;
+        [Tooltip("The event(s) invoked when Vibration becomes enabled by clicking the Vibration Button")]
+        public UnityEvent onEnableVibration;
+        [Tooltip("The event(s) invoked when Vibration becomes disabled by clicking the Vibration Button")]
+        public UnityEvent onDisableVibration;
+
         [Header("SFX Button Events")]
         [Tooltip("The event(s) invoked when the SFX Button is clicked (optionally, you may add listeners to the enable/disable events instead)")]
         public UnityEvent onToggleSFX;

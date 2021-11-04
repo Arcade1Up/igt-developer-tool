@@ -18,6 +18,8 @@ namespace InfinityGameTable.Settings
         public GameObject howToPlayPanel;
 
         [Header("Settings Menu Toggle Buttons")]
+        [Tooltip("The Vibration button, so that it's state can be toggled on/off")]
+        public ToggleButtonExtension vibrationButton;
         [Tooltip("The SFX button, so that it's state can be toggled on/off")]
         public ToggleButtonExtension sfxButton;
         [Tooltip("The Music button, so that it's state can be toggled on/off")]
@@ -26,6 +28,7 @@ namespace InfinityGameTable.Settings
         [HideInInspector]
         public Settings config;
 
+        private bool isVibrationEnabled = true;
         private bool isSFXEnabled = true;
         private bool isMusicEnabled = true;
 
@@ -37,6 +40,7 @@ namespace InfinityGameTable.Settings
             if (!settingsButton) throw new System.Exception($"Missing Settings Button for {gameObject.name}");
             if (!settingsPanel) throw new System.Exception($"Missing Settings Panel game object for {gameObject.name}");
             if (!howToPlayPanel) throw new System.Exception($"Missing How To Play Panel game object for {gameObject.name}");
+            if (!vibrationButton) throw new System.Exception($"Missing Vibration Button for {gameObject.name}");
             if (!sfxButton) throw new System.Exception($"Missing SFX Button for {gameObject.name}");
             if (!musicButton) throw new System.Exception($"Missing Music Button for {gameObject.name}");
 
@@ -86,6 +90,26 @@ namespace InfinityGameTable.Settings
         public void GoDashboard()
         {
             InfinityGameTableHelper.QuitToDashboard();
+        }
+
+        public void ToggleVibration()
+        {
+            config.onToggleVibration.Invoke();
+            isVibrationEnabled = !isVibrationEnabled;
+            if (isVibrationEnabled)
+            {
+                config.onEnableVibration.Invoke();
+            }
+            else
+            {
+                config.onDisableVibration.Invoke();
+            }
+            vibrationButton.SetOn(isVibrationEnabled);
+
+            if (isVibrationEnabled)
+            {
+                InfinityGameTableHelper.Rumble(100);
+            }
         }
 
         public void ToggleSFX()
