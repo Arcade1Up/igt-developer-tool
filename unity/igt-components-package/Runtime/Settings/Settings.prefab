@@ -868,7 +868,7 @@ MonoBehaviour:
   vibrationButton: {fileID: 2940191228375878148}
   sfxButton: {fileID: 4398729202276740813}
   musicButton: {fileID: 234904013482508734}
-  config: {fileID: 0}
+  settingsConfig: {fileID: 0}
 --- !u!1 &6035674466524824428
 GameObject:
   m_ObjectHideFlags: 0
@@ -2848,3 +2848,4 @@ MonoBehaviour:
   image: {fileID: 8100826418657198689}
   label: {fileID: 5455319268777326887}
   onColor: {r: 0.03137255, g: 0.7137255, b: 1, a: 1}
+  offColor: {r: 1, g: 1, b: 1, a: 1}
