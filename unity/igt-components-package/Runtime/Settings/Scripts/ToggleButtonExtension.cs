@@ -8,8 +8,8 @@ namespace InfinityGameTable.Settings
         public Image image;
         public Text label;
         public Color onColor;
+        public Color offColor;
         
-        private Color offColor;
         private bool isOn = true;
 
         private void Awake()
@@ -17,7 +17,6 @@ namespace InfinityGameTable.Settings
             if (!image) throw new System.Exception($"Missing Image for {gameObject.name}");
             if (!label) throw new System.Exception($"Missing Label for {gameObject.name}");
 
-            offColor = image.color;
             UpdateDisplay();
         }
 

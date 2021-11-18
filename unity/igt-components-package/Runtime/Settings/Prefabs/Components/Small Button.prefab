@@ -328,3 +328,4 @@ MonoBehaviour:
   image: {fileID: 1880807335342084618}
   label: {fileID: 2433981210921986380}
   onColor: {r: 0.03137255, g: 0.7137255, b: 1, a: 1}
+  offColor: {r: 1, g: 1, b: 1, a: 1}

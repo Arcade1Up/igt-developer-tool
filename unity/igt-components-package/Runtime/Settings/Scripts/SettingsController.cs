@@ -26,16 +26,57 @@ namespace InfinityGameTable.Settings
         public ToggleButtonExtension musicButton;
 
         [HideInInspector]
-        public Settings config;
+        public Settings settingsConfig;
 
-        private bool isVibrationEnabled = true;
-        private bool isSFXEnabled = true;
-        private bool isMusicEnabled = true;
-
-        void Awake()
+        private string isVibrationEnabledKey = "isVibrationEnabled";
+        private bool isVibrationEnabled
         {
-            config = GetComponentInParent<Settings>();
-            if (!config) throw new System.Exception($"Missing Settings component on parent of {gameObject.name}");
+            get
+            {
+                return PlayerPrefs.GetInt(isVibrationEnabledKey, 1) == 1;
+            }
+
+            set
+            {
+                PlayerPrefs.SetInt(isVibrationEnabledKey, value ? 1 : 0);
+                PlayerPrefs.Save();
+            }
+        }
+
+        private string isSFXEnabledKey = "isSFXEnabled";
+        private bool isSFXEnabled
+        {
+            get
+            {
+                return PlayerPrefs.GetInt(isSFXEnabledKey, 1) == 1;
+            }
+
+            set
+            {
+                PlayerPrefs.SetInt(isSFXEnabledKey, value ? 1 : 0);
+                PlayerPrefs.Save();
+            }
+        }
+
+        private string isMusicEnabledKey = "isMusicEnabled";
+        private bool isMusicEnabled
+        {
+            get
+            {
+                return PlayerPrefs.GetInt(isMusicEnabledKey, 1) == 1;
+            }
+
+            set
+            {
+                PlayerPrefs.SetInt(isMusicEnabledKey, value ? 1 : 0);
+                PlayerPrefs.Save();
+            }
+        }
+
+        void Start()
+        {
+            settingsConfig = GetComponentInParent<Settings>();
+            if (!settingsConfig) throw new System.Exception($"Missing Settings component on parent of {gameObject.name}");
 
             if (!settingsButton) throw new System.Exception($"Missing Settings Button for {gameObject.name}");
             if (!settingsPanel) throw new System.Exception($"Missing Settings Panel game object for {gameObject.name}");
@@ -47,7 +88,12 @@ namespace InfinityGameTable.Settings
             settingsPanel.SetActive(false);
             howToPlayPanel.SetActive(false);
 
-            versionLabel.text = $"V{Application.version}";
+            versionLabel.text = $"v{Application.version}";
+
+            // Load values from PlayerPrefs
+            SetVibration(isVibrationEnabled);
+            SetSFX(isSFXEnabled);
+            SetMusic(isMusicEnabled);
         }
 
         public void ToggleSettingsPanelActive()
@@ -68,17 +114,17 @@ namespace InfinityGameTable.Settings
 
             if (settingsPanel.activeInHierarchy)
             {
-                config.onShowSettingsMenu.Invoke();
+                settingsConfig.onShowSettingsMenu.Invoke();
             }
             else
             {
-                config.onHideSettingsMenu.Invoke();
+                settingsConfig.onHideSettingsMenu.Invoke();
             }
         }
 
         public void GoHome()
         {
-            config.onGoHome.Invoke();
+            settingsConfig.onGoHome.Invoke();
             SetSettingsPanelActive(false);
         }
 
@@ -94,17 +140,8 @@ namespace InfinityGameTable.Settings
 
         public void ToggleVibration()
         {
-            config.onToggleVibration.Invoke();
-            isVibrationEnabled = !isVibrationEnabled;
-            if (isVibrationEnabled)
-            {
-                config.onEnableVibration.Invoke();
-            }
-            else
-            {
-                config.onDisableVibration.Invoke();
-            }
-            vibrationButton.SetOn(isVibrationEnabled);
+            settingsConfig.onToggleVibration.Invoke();
+            SetVibration(!isVibrationEnabled);
 
             if (isVibrationEnabled)
             {
@@ -114,32 +151,56 @@ namespace InfinityGameTable.Settings
 
         public void ToggleSFX()
         {
-            config.onToggleSFX.Invoke();
-            isSFXEnabled = !isSFXEnabled;
-            if (isSFXEnabled)
-            {
-                config.onEnableSFX.Invoke();
-            }
-            else
-            {
-                config.onDisableSFX.Invoke();
-            }
-            sfxButton.SetOn(isSFXEnabled);
+            settingsConfig.onToggleSFX.Invoke();
+            SetSFX(!isSFXEnabled);
         }
 
         public void ToggleMusic()
         {
-            config.onToggleMusic.Invoke();
-            isMusicEnabled = !isMusicEnabled;
-            if (isMusicEnabled)
+            settingsConfig.onToggleMusic.Invoke();
+            SetMusic(!isMusicEnabled);
+        }
+
+        private void SetVibration(bool isEnabled)
+        {
+            isVibrationEnabled = isEnabled;
+            if (isEnabled)
             {
-                config.onEnableMusic.Invoke();
+                settingsConfig.onEnableVibration.Invoke();
             }
             else
             {
-                config.onDisableMusic.Invoke();
+                settingsConfig.onDisableVibration.Invoke();
             }
-            musicButton.SetOn(isMusicEnabled);
+            vibrationButton.SetOn(isEnabled);
+        }
+
+        private void SetSFX(bool isEnabled)
+        {
+            isSFXEnabled = isEnabled;
+            if (isEnabled)
+            {
+                settingsConfig.onEnableSFX.Invoke();
+            }
+            else
+            {
+                settingsConfig.onDisableSFX.Invoke();
+            }
+            sfxButton.SetOn(isEnabled);
+        }
+
+        private void SetMusic(bool isEnabled)
+        {
+            isMusicEnabled = isEnabled;
+            if (isEnabled)
+            {
+                settingsConfig.onEnableMusic.Invoke();
+            }
+            else
+            {
+                settingsConfig.onDisableMusic.Invoke();
+            }
+            musicButton.SetOn(isEnabled);
         }
     }
 }
