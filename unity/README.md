@@ -9,13 +9,7 @@ To help with common development needs, there is a community built [igt-component
 
 ### Steps to install games directly from within Unity
 
-1. Enable USB Debugging on the table
-   - Follow steps provided by <a href="https://arcade1up.com/">Arcade1Up™</a> for accessing the Android launcher on table
-   - Go to `Settings` > `About tablet` and tap on `Build number` 7 times
-   - Return to `Settings` > "System" > `Developer Options`
-     - Enable `Debugging` > `USB debugging`
-   - Return to `Settings` > `USB Mode`
-     - Change to `OTG` > `Device Mode`
+1. Follow steps provided by <a href="https://arcade1up.com/">Arcade1Up™</a> to enable USB Debugging on the table
 2. Connect USB cable to USB port closest to TF card port
 3. Verify you can see the IGT from Windows
    - Launch Windows Explorer and browse to Android SDK platform-tools folder
