@@ -19,6 +19,8 @@ The page is intended to help developers to get started on games development on T
 
 ## <a name="technicalspec"></a>Technical Specification
 
+### 24" Infinity Game Table (2021)
+
 | Item                    | Spec                                        |
 | :---------------------- | :------------------------------------------ |
 | **CPU**                 | RockChip RK3368 Octa-core Cortex-A53 1.5GHz |
@@ -26,12 +28,45 @@ The page is intended to help developers to get started on games development on T
 | **Memory**              | 16GB + TF Card Slot                         |
 | **RAM**                 | DDR3 2GB                                    |
 | **WiFi**                | 2.4G                                        |
-| **Screen Sizes**        | 24" and 32"                                 |
+| **Screen Sizes**        | 24"                                         |
 | **Operating System**    | Android 9                                   |
 | **Screen Resolution**   | 1920x1080                                   |
 | **Aspect Ratio**        | 16:9                                        |
-| **Touch Support**       | G+G capacitive Touch-10 Points              |
 | **Google Play Service** | Not available                               |
+
+<br/>
+
+### 32" Infinity Game Table (2022)
+
+| Item                    | Spec                                     |
+| :---------------------- | :--------------------------------------- |
+| **CPU**                 | RockChip RK3566 Quad-Core ARM Cortex-A55 |
+| **GPU**                 | Mali G52                                 |
+| **Memory**              | 16GB + TF Card Slot                      |
+| **RAM**                 | DDR4 2GB                                 |
+| **WiFi**                | 2.4G                                     |
+| **Screen Sizes**        | 32"                                      |
+| **Operating System**    | Android 11                               |
+| **Screen Resolution**   | 1920x1080                                |
+| **Aspect Ratio**        | 16:9                                     |
+| **Google Play Service** | Not available                            |
+
+<br/>
+
+### Infinity Game Board (2023)
+
+| Item                    | Spec                                     |
+| :---------------------- | :--------------------------------------- |
+| **CPU**                 | RockChip RK3566 Quad-Core ARM Cortex-A55 |
+| **GPU**                 | Mali G52                                 |
+| **Memory**              | 16GB                                     |
+| **RAM**                 | DDR4 2GB                                 |
+| **WiFi**                | 2.4G                                     |
+| **Screen Sizes**        | 18.5"                                    |
+| **Operating System**    | Android 11                               |
+| **Screen Resolution**   | 1920x1080                                |
+| **Aspect Ratio**        | 16:9                                     |
+| **Google Play Service** | Not available                            |
 
 ## <a name="overview"></a>Overview
 
