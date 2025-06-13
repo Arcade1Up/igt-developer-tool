@@ -19,9 +19,9 @@ The page is intended to help developers to get started on games development on T
 
 ## <a name="technicalspec"></a>Technical Specification
 
-### 24" Infinity Game Table (2021)
+### **24" Infinity Game Table**
 
-| Item                    | Spec                                        |
+| Item                    | 2021 Model                                        |
 | :---------------------- | :------------------------------------------ |
 | **CPU**                 | RockChip RK3368 Octa-core Cortex-A53 1.5GHz |
 | **GPU**                 | PowerVR G6110                               |
@@ -36,37 +36,37 @@ The page is intended to help developers to get started on games development on T
 
 <br/>
 
-### 32" Infinity Game Table (2022)
+### **32" Infinity Game Table**
 
-| Item                    | Spec                                     |
-| :---------------------- | :--------------------------------------- |
-| **CPU**                 | RockChip RK3566 Quad-Core ARM Cortex-A55 |
-| **GPU**                 | Mali G52                                 |
-| **Memory**              | 16GB + TF Card Slot                      |
-| **RAM**                 | DDR4 2GB                                 |
-| **WiFi**                | 2.4G                                     |
-| **Screen Sizes**        | 32"                                      |
-| **Operating System**    | Android 11                               |
-| **Screen Resolution**   | 1920x1080                                |
-| **Aspect Ratio**        | 16:9                                     |
-| **Google Play Service** | Not available                            |
+| Item                    | 2022 Model                               | 2024 Model                               |
+| :---------------------- | :--------------------------------------- | :--------------------------------------- |
+| **CPU**                 | RockChip RK3566 Quad-Core ARM Cortex-A55 | RockChip RK3566 Quad-Core ARM Cortex-A55 |
+| **GPU**                 | Mali G52                                 | Mali G52                                 |
+| **Memory**              | 16GB + TF Card Slot                      | 32GB + TF Card Slot                      |
+| **RAM**                 | DDR4 2GB                                 | DDR4 2GB                                 |
+| **WiFi**                | 2.4G                                     | 2.4G / 5G Dual-band                      |
+| **Screen Sizes**        | 32"                                      | 32"                                      |
+| **Operating System**    | Android 11                               | Android 11                               |
+| **Screen Resolution**   | 1920x1080                                | 1920x1080                                |
+| **Aspect Ratio**        | 16:9                                     | 16:9                                     |
+| **Google Play Service** | Not available                            | Not available                            |
 
 <br/>
 
-### Infinity Game Board (2023)
+### **Infinity Game Board**
 
-| Item                    | Spec                                     |
-| :---------------------- | :--------------------------------------- |
-| **CPU**                 | RockChip RK3566 Quad-Core ARM Cortex-A55 |
-| **GPU**                 | Mali G52                                 |
-| **Memory**              | 16GB                                     |
-| **RAM**                 | DDR4 2GB                                 |
-| **WiFi**                | 2.4G                                     |
-| **Screen Sizes**        | 18.5"                                    |
-| **Operating System**    | Android 11                               |
-| **Screen Resolution**   | 1920x1080                                |
-| **Aspect Ratio**        | 16:9                                     |
-| **Google Play Service** | Not available                            |
+| Item                    | 2023 Model                               | 2024 Model                               |
+| :---------------------- | :--------------------------------------- | :--------------------------------------- |
+| **CPU**                 | RockChip RK3566 Quad-Core ARM Cortex-A55 | RockChip RK3566 Quad-Core ARM Cortex-A55 |
+| **GPU**                 | Mali G52                                 | Mali G52                                 |
+| **Memory**              | 16GB                                     | 32GB                                     |
+| **RAM**                 | DDR4 2GB                                 | DDR4 2GB                                 |
+| **WiFi**                | 2.4G                                     | 2.4G / 5G Dual-band                      |
+| **Screen Sizes**        | 18.5"                                    | 18.5"                                    |
+| **Operating System**    | Android 11                               | Android 11                               |
+| **Screen Resolution**   | 1920x1080                                | 1920x1080                                |
+| **Aspect Ratio**        | 16:9                                     | 16:9                                     |
+| **Google Play Service** | Not available                            | Not available                            |
 
 ## <a name="overview"></a>Overview
 
