@@ -100,7 +100,8 @@ In-Game Menu Settings:
 
 Here is sample project with the in-game menus, developers can feel free to integrate this menu directly to their games, or build their own game menu. The only must-have item is a software button to return to the IGT Dashboard.
 
-_Sample project coming soon_
+## <a name="ingamemenu"></a>Versioning
+The versionName of your release MUST adopt Semantic Versioning (SemVer) for our Over-The-Air (OTA) update system to work seamlessly, using the MAJOR.MINOR.PATCH format to clearly communicate the nature of your changes.
 
 ## <a name="controlmotor"></a>Control the Rumble Motor
 
